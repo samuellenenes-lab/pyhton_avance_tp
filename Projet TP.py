@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 # Data
 # =======================
 
-CSV_PATH = "C:\\Users\\samue\\OneDrive\\Documents\\Cours\\M1 ECAP\\Python avancée\\TD1\\cours-m1-ecap\\datasets\\data.csv"
+CSV_PATH = "data.csv"
 df = pd.read_csv(CSV_PATH)
 
 df["Transaction_Date"] = pd.to_datetime(df["Transaction_Date"], errors="coerce")
