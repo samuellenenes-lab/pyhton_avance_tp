@@ -41,10 +41,6 @@ def filter_df(location_value):
 
 
 def indicator_kpi_fig(title, value, reference, value_format="~s"):
-    """
-    KPI avec go.Indicator + delta(reference=mois précédent)
-    - sans triangles/symboles
-    """
     fig = go.Figure(go.Indicator(
         mode="number+delta",
         value=value,
